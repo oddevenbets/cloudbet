@@ -86,7 +86,7 @@ def get_all_live_basketball_events():
                     selections = get_odd_even_market(event['id'])
                     if selections:
                         # Filter selections to only include those with odds > 2.04
-                        filtered_selections = [s for s in selections if float(s['price']) > 2.04]
+                        filtered_selections = [s for s in selections if float(s['price']) > 1.04]
                         if filtered_selections:
                             events.append({
                                 'event_id': event['id'],
